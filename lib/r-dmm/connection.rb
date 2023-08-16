@@ -1,6 +1,7 @@
 require 'faraday'
 require 'faraday_middleware'
 require 'r-dmm/error'
+require 'r-dmm/response'
 
 module Rdmm
   module Connection
@@ -16,7 +17,7 @@ module Rdmm
       error = Error.from_response(response)
       raise error if error
 
-      response.body
+      Response.new(response)
     end
 
     def connection
