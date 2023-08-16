@@ -32,6 +32,8 @@ client = DMM.new(:api_id => api_id, :affiliate_id => affiliate_id)
 
 ```rb
 response = client.items(:site => 'DMM.com', :hits => 5, :sort => 'rank')
+response.result[:items].first[:title]
+# => "【受注生産】ミュージカル『刀剣乱舞』 江 おん すていじ 〜新編 里見八犬伝〜 ランダムブロマイド"
 ```
 
 ### floors(フロア API)
