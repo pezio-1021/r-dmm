@@ -4,12 +4,12 @@ require 'faraday_middleware'
 module Rdmm
   module Connection
     def get(path, **params)
-      request(:get, path, params)
+      request(:get, path, **params)
     end
 
     private
 
-    def request(method, path, params)
+    def request(method, path, **params)
       response = connection.public_send(method, path, credentials.merge(params))
 
       response.body
