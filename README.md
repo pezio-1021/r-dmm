@@ -1,8 +1,6 @@
-# R::Dmm
+# r-dmm
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/r/dmm`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+It is an API Client for DMM Web Service API v3.0 written in Ruby.
 
 ## Installation
 
@@ -22,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Initialize client
+
+```rb
+api_id = 'YOUR-API-ID'
+affiliate_id = 'YOUR-AFFILIATE-ID'
+client = DMM.new(:api_id => api_id, :affiliate_id => affiliate_id)
+```
+
+### items(商品情報 API)
+
+```rb
+response = client.items(:site => 'DMM.com', :hits => 5, :sort => 'rank')
+```
+
+### floors(フロア API)
+
+```rb
+response = client.floors()
+```
 
 ## Development
 

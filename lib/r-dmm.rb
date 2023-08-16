@@ -1,8 +1,8 @@
-require "r/dmm/version"
+require 'r-dmm/client'
+module Rdmm
+  # class Error < StandardError; end
 
-module R
-  module Dmm
-    class Error < StandardError; end
-    # Your code goes here...
+  def self.new(options = {})
+    Rdmm::Client.new(options)
   end
 end
