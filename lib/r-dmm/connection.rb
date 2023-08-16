@@ -1,5 +1,6 @@
 require 'faraday'
 require 'faraday_middleware'
+require 'r-dmm/error'
 
 module Rdmm
   module Connection
@@ -11,6 +12,9 @@ module Rdmm
 
     def request(method, path, **params)
       response = connection.public_send(method, path, credentials.merge(params))
+
+      error = Error.from_response(response)
+      raise error if error
 
       response.body
     end
