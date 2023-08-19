@@ -2,6 +2,8 @@
 
 It is an API Client for DMM Web Service API v3.0 written in Ruby.
 
+https://affiliate.dmm.com/api/
+
 ## Installation
 
 Add this line to your application's Gemfile:
