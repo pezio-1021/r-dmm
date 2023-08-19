@@ -1,4 +1,4 @@
-module Rdmm
+module Rubydmmd
   module Endpoint
     module Series
       def series(**options)

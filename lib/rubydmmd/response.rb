@@ -1,6 +1,6 @@
 require 'active_support/core_ext/hash/keys'
 
-module Rdmm
+module Rubydmmd
   class Response
     def initialize(faraday_response)
       @response = faraday_response

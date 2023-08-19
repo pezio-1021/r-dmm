@@ -1,9 +1,9 @@
 require 'faraday'
 require 'faraday_middleware'
-require 'r-dmm/error'
-require 'r-dmm/response'
+require 'rubydmmd/error'
+require 'rubydmmd/response'
 
-module Rdmm
+module Rubydmmd
   module Connection
     def get(path, **params)
       request(:get, path, **params)
@@ -25,7 +25,7 @@ module Rdmm
         c.request :json
         c.response :json, content_type: /\bjson$/
         c.adapter Faraday.default_adapter
-        c.headers['User-Agent'] = "r-dmm Ruby Gem #{VERSION} (#{RUBY_ENGINE}#{RUBY_VERSION})"
+        c.headers['User-Agent'] = "rubydmmd Ruby Gem #{VERSION} (#{RUBY_ENGINE}#{RUBY_VERSION})"
       end
     end
 

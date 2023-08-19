@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "r-dmm/version"
+require "rubydmmd/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "r-dmm"
-  spec.version       = Rdmm::VERSION
+  spec.name          = "rubydmmd"
+  spec.version       = Rubydmmd::VERSION
   spec.authors       = ["shohei.takahashi"]
   spec.email         = ["iloveoneokbaske@gmail.com"]
 
   spec.summary       = 'API Client for DMM Web Service API v3.0 written in Ruby.'
   spec.description   = 'API Client for DMM Web Service API v3.0 written in Ruby.'
-  spec.homepage      = "https://github.com/pezio-1021/r-dmm"
+  spec.homepage      = "https://github.com/pezio-1021/rubydmmd"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = 'https://rubygems.org'
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = 'https://github.com/pezio-1021/r-dmm'
+    spec.metadata["source_code_uri"] = 'https://github.com/pezio-1021/rubydmmd'
     # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
   else
     raise "RubyGems 2.0 or newer is required to protect against " \

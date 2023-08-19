@@ -1,4 +1,4 @@
-# r-dmm
+# rubydmmd
 
 It is an API Client for DMM Web Service API v3.0 written in Ruby.
 
@@ -9,7 +9,7 @@ https://affiliate.dmm.com/api/
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'r-dmm'
+gem 'rubydmmd'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install r-dmm
+    $ gem install rubydmmd
 
 ## Usage
 
@@ -44,33 +44,33 @@ response.result[:items].first[:title]
 response = client.floors
 ```
 
-### actress(女優検索API)
+### actress(女優検索 API)
 
-``` rb
+```rb
 response = client.actresses
 ```
 
-### genre(ジャンル検索API)
+### genre(ジャンル検索 API)
 
-``` rb
+```rb
 response = client.genres
 ```
 
-### maker(メーカー検索API)
+### maker(メーカー検索 API)
 
-``` rb
+```rb
 response = client.makers(:floor_id => 92)
 ```
 
-### series(シリーズ検索API)
+### series(シリーズ検索 API)
 
-``` rb
+```rb
 response = cllient.series(:floor_id => 92)
 ```
 
-### authores(作者検索API)
+### authores(作者検索 API)
 
-``` rb
+```rb
 response = client.authores(:floor_id => 92)
 ```
 
@@ -82,7 +82,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/r-dmm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubydmmd. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -90,4 +90,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the R::Dmm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/r-dmm/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the R::Dmm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rubydmmd/blob/master/CODE_OF_CONDUCT.md).

@@ -1,4 +1,4 @@
-module Rdmm
+module Rubydmmd
   module Endpoint
     module Genre
       def genres(**options)

@@ -1,4 +1,4 @@
-module Rdmm
+module Rubydmmd
   module Endpoint
     module Floor
       def floors(**options)
