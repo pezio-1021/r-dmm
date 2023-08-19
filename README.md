@@ -39,7 +39,37 @@ response.result[:items].first[:title]
 ### floors(フロア API)
 
 ```rb
-response = client.floors()
+response = client.floors
+```
+
+### actress(女優検索API)
+
+``` rb
+response = client.actresses
+```
+
+### genre(ジャンル検索API)
+
+``` rb
+response = client.genres
+```
+
+### maker(メーカー検索API)
+
+``` rb
+response = client.makers(:floor_id => 92)
+```
+
+### series(シリーズ検索API)
+
+``` rb
+response = cllient.series(:floor_id => 92)
+```
+
+### authores(作者検索API)
+
+``` rb
+response = client.authores(:floor_id => 92)
 ```
 
 ## Development
