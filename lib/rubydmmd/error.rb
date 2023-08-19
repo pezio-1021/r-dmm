@@ -1,4 +1,4 @@
-module Rdmm
+module Rubydmmd
   class Error < StandardError
     def self.from_response(response)
       klass =

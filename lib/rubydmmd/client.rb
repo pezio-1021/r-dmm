@@ -1,7 +1,7 @@
-require 'r-dmm/connection'
-require 'r-dmm/endpoint'
+require 'rubydmmd/connection'
+require 'rubydmmd/endpoint'
 
-module Rdmm
+module Rubydmmd
   class Client
     include Connection
     include Endpoint
